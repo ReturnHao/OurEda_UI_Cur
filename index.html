@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OurEDA-Wifi</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.js"></script>
+    <script language="JavaScript">
+        window.onload=function() {
+            document.forms[0].reset();
+    </script>
+</head>
+
+<body>
+    <div class="Login_wrapper">
+        <div class="Login_title">
+            <span>OurEDA-Wifi</span>
+        </div>
+        <div class="Login_tips">
+            <div class="Error_tips" id="Error_tips" style="display: none">
+                <span class="Error_message" id="Error_msg">! Error 404</span>
+            </div>
+        </div>
+        <div class="Login_fields">
+            <div class="Fields_user">
+                <label class="Input_tips" id="UIn_tips" style="display: block;">User name</label>
+                <div class="Input_wrapper">
+                    <input class="Input_form" type="text" id="User_id" value=""/>
+                </div>
+            </div>
+            <div class="Fields_password">
+                <label class="Input_tips" id="UPs_tips" style="display: block;">Password</label>
+                <div class="Input_wrapper">
+                    <input class="Input_form" type="password" id="Pswd_id" value=""/>
+                </div>
+            </div>
+            <div class="Fields_validation">
+                <label class="Input_tips" id="Val_tips" style="display: block;">Validation Code</label>
+                <div class="Input_wrapper">
+                    <input class="Input_form" type="text" id="Valid_id" value=""/>
+                </div>
+            </div>
+            <div class="Fields_Remember" onclick="javascript:Remember()">
+                <a class="Checkbox_form" id="Checkbox_id"></a>
+                <label class="Wording_form" id="Wording_id">Remember me</label>
+            </div>
+            <div class="Fields_submit">
+                <a class="Login_button" href="" hidefocus="true">
+                    <input class="Submit_form" type="submit" id="Submit_id" value="Sign In"/>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="Bottom_fields">
+        <a class="Link_form" href="" id="Forget_password" target="_blank">Forgot Password?</a>
+        <span class="Dotted_form">|</span>
+        <a class="Link_form" href="" id="Sign_up" target="_blank">Sign up</a>
+        <span class="Dotted_form">|</span>
+        <a class="Link_form" href="" id="Feed_back" target="_blank">Feed Back</a>
+        <span class="Dotted_form">|</span>
+        <span class="Link_form"> © Patrick Fang. All Rights Reserved. QQ: 798273600</span>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
